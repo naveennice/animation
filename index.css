@@ -1,0 +1,28 @@
+.result-itms {
+    width: 450px; /* Full width of the container */
+    height: 450px; /* Height of the container */
+    overflow: hidden; /* Hide text outside the container */
+    position: relative; /* Position relative to contain absolutely positioned text */
+    background-color: #f0f0f0; /* Optional: background color for visibility */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+.result-itms-list {
+    position: relative;
+    width: 100%;/* Start at the top of the container */
+    animation: scroll-up 50s linear infinite; /* Animate upwards, infinitely looping */
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(0%); /* Start at the top */
+    }
+    100% {
+        transform: translateY(-100%); /* Move upwards out of view */
+    }
+}
+
+
+.result-itms:hover .result-itms-list {
+    animation-play-state: paused;
+}
