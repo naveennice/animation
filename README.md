@@ -1,2 +1,2 @@
 # animation
-Markque Animation Naveen
+Markque Animation
